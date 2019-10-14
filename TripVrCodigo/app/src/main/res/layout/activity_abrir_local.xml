@@ -7,7 +7,7 @@
     android:orientation="vertical"
 
 
-    tools:context=".AbrirLocal">
+    tools:context=".AbrirLocalActivity">
 
 
     <FrameLayout

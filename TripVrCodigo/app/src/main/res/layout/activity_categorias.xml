@@ -66,9 +66,7 @@
                 android:layout_width="156dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
-                android:src="@drawable/palace"
-                android:background="@drawable/borda2"
-                tools:src="@drawable/palace"></ImageView>
+                android:src="@drawable/palace"></ImageView>
 
                 <Spinner
                     android:layout_width="203dp"
@@ -90,16 +88,14 @@
                 android:layout_width="156dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp"
-                android:src="@drawable/teatro"
-                android:background="@drawable/borda2"
                 tools:src="@drawable/teatro"></ImageView>
 
-            <Spinner
-                android:layout_width="203dp"
-                android:layout_height="wrap_content"
-                android:text="Teatros"
-                android:textSize="30dp"
-                android:textStyle="bold"></Spinner>
+                <Spinner
+                    android:layout_width="203dp"
+                    android:layout_height="match_parent"
+                    android:text="Teatros"
+                    android:textSize="30dp"
+                    android:textStyle="bold"></Spinner>
 
         </LinearLayout>
 
@@ -114,13 +110,11 @@
                     android:layout_width="156dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="0dp"
-                    android:src="@drawable/park"
-                    android:background="@drawable/borda2"
                     tools:src="@drawable/park"></ImageView>
 
                 <Spinner
                     android:layout_width="203dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="Parques"
                     android:textSize="30dp"
                     android:textStyle="bold"></Spinner>
@@ -133,22 +127,19 @@
                 android:orientation="horizontal"
                 android:layout_marginVertical="20dp">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/btn_Museus"
                     android:layout_width="156dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="0dp"
-                    android:src="@drawable/image0"
-                    android:background="@drawable/borda2"
-                    tools:src="@drawable/image0"></ImageButton>
+                    tools:src="@drawable/image0"></ImageView>
 
                 <Spinner
-                    android:layout_width="203dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="204dp"
+                    android:layout_height="match_parent"
                     android:text="Museus"
                     android:textSize="30dp"
                     android:textStyle="bold"></Spinner>
-
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>
