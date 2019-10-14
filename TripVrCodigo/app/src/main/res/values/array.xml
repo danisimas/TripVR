@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="spinnerPalacios">
-        <item>Palácios</item>
+    <string-array name="Palacios">
         <item>Local 1</item>
         <item>Local 2</item>
         <item>Local 3</item>
     </string-array>
 
-    <string-array name="spinnerTeatros">
-        <item>Teatros</item>
+    <string-array name="Teatros">
         <item>Local 1</item>
         <item>Local 2</item>
         <item>Local 3</item>
     </string-array>
 
-    <string-array name="spinnerParques">
-        <item>Parques</item>
+    <string-array name="Parques">
         <item>Local 1</item>
         <item>Local 2</item>
         <item>Local 3</item>
     </string-array>
 
-    <string-array name="spinnerMuseus">
+    <string-array name="Museus">
         <item>Museus</item>
         <item>Local 1</item>
         <item>Local 2</item>
