@@ -78,15 +78,16 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/btn_palace"
+                        android:id="@+id/img_palace"
                         android:layout_width="156dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="0dp"
                         android:background="@drawable/borda2"
                         android:src="@drawable/palace"
-                        tools:src="@drawable/palace"></ImageView>
+                        tools:src="@drawable/palace"/>
 
                     <Spinner
+                        android:id="@+id/spinner_palacios"
                         android:layout_width="203dp"
                         android:layout_height="match_parent"
                         android:entries="@array/Palacios"
