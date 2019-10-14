@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "761288871423",
+    "firebase_url": "https://tripvr-app.firebaseio.com",
+    "project_id": "tripvr-app",
+    "storage_bucket": "tripvr-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761288871423:android:5a7a5526ff6272aaaeebca",
+        "android_client_info": {
+          "package_name": "com.exemplo.tripvr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761288871423-5lcdcnd63okb5i7fi74qcqvbvrs5t7ok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exemplo.tripvr",
+            "certificate_hash": "3fcbc4650b50913ef15bdb95b259a8978c7df2a4"
+          }
+        },
+        {
+          "client_id": "761288871423-fd44p4kevmlicr7ksp2ljv72e01ecsq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMFQw7TyWwPDnl71ymi7JO9FWZKCeuTJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761288871423-fd44p4kevmlicr7ksp2ljv72e01ecsq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
