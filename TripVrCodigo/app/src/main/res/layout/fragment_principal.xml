@@ -30,7 +30,9 @@
             android:id="@+id/buscaLocal"
             android:layout_width="388dp"
             android:layout_height="54dp"
-            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="16dp"
             android:padding="16dp">
 
