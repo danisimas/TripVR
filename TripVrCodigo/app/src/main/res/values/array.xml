@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="Palacios">
+        <item>Palácios</item>
         <item>Local 1</item>
         <item>Local 2</item>
         <item>Local 3</item>
     </string-array>
 
     <string-array name="Teatros">
+        <item>Teatros</item>
         <item>Local 1</item>
         <item>Local 2</item>
         <item>Local 3</item>
     </string-array>
 
     <string-array name="Parques">
+        <item>Parques</item>
         <item>Local 1</item>
         <item>Local 2</item>
         <item>Local 3</item>
