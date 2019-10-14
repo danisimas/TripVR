@@ -21,7 +21,8 @@ public class FirebaseHelper {
     public static StorageReference getFirebaseStorage(){
 
         if(referenciaStorage==null){
-            referenciaStorage = FirebaseStorage.getInstance().getReference();
+            referenciaStorage = FirebaseStorage.
+                    getInstance().getReference();
         }
         return referenciaStorage;
     }

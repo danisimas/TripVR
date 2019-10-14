@@ -91,7 +91,7 @@
                         android:layout_height="match_parent"
                         android:entries="@array/Palacios"
                         android:paddingLeft="20dp"
-                        android:text="Palacios"
+                        android:id="@+id/spinnerPalacios"
                         android:textSize="20sp"
                         android:textStyle="bold">
 
@@ -119,7 +119,7 @@
                         android:layout_height="match_parent"
                         android:entries="@array/Teatros"
                         android:paddingLeft="20dp"
-                        android:text="Palacios"
+                        android:id="@+id/spinnerTeatros"
                         android:textSize="20sp"
                         android:textStyle="bold">
 
@@ -149,6 +149,7 @@
                         android:paddingLeft="20dp"
                         android:textSize="20sp"
                         android:entries="@array/Parques"
+                        android:id="@+id/spinnerParques"
                         android:textStyle="bold">
 
                     </Spinner>
@@ -174,8 +175,8 @@
                         android:layout_width="203dp"
                         android:layout_height="match_parent"
                         android:entries="@array/Museus"
-                        android:paddingLeft="20dp"
-                        android:text="Palacios"
+                        android:paddingLeft="20d"
+                        android:id="@+id/spinnerMuseus"
                         android:textSize="20sp"
                         android:textStyle="bold">
 

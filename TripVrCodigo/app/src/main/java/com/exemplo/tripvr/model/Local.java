@@ -4,6 +4,15 @@ public class Local {
 
     String nome,endereco,horario,id,Categoria;
 
+    public Local(String nome, String endereco, String horario, String id, String categoria) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.horario = horario;
+        this.id = id;
+        Categoria = categoria;
+    }
+    public Local(){}
+
     public String getNome() {
         return nome;
     }
