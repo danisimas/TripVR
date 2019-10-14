@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     @Override
     protected void onCreate(Bundle savedInstanceState){
             super.onCreate(savedInstanceState);
+            getSupportActionBar().hide();
             setContentView(R.layout.main_activity);
 
             loadFragment(new PrincipalFragment());
