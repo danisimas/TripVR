@@ -7,13 +7,27 @@
     android:orientation="vertical"
     tools:context=".CategoriasActivity">
 
-    <ImageView
-        android:id="@+id/imageLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:src="@drawable/logo" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/btn_voltar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/voltar" />
+
+
+    </FrameLayout>
 
 
     <FrameLayout
@@ -26,7 +40,7 @@
             android:layout_height="45dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            android:background="@drawable/borda2"/>
+            android:background="@drawable/borda2" />
 
         <SearchView
             android:id="@+id/buscaLocal"
@@ -42,106 +56,133 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <FrameLayout
-        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="20dp"
-            android:layout_marginVertical="10dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginVertical="20dp">
-            <ImageView
-                android:id="@+id/btn_palace"
-                android:layout_width="156dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="0dp"
-                android:src="@drawable/palace"></ImageView>
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
 
-                <Spinner
-                    android:layout_width="203dp"
-                    android:layout_height="match_parent"
-                    android:text="Palacios"
-                    android:textSize="30dp"
-                    android:textStyle="bold"></Spinner>
-
-            </LinearLayout>
-
-            <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="20dp">
-
-            <ImageView
-                android:id="@+id/btn_teatros"
-                android:layout_width="156dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="0dp"
-                tools:src="@drawable/teatro"></ImageView>
-
-                <Spinner
-                    android:layout_width="203dp"
-                    android:layout_height="match_parent"
-                    android:text="Teatros"
-                    android:textSize="30dp"
-                    android:textStyle="bold"></Spinner>
-
-        </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginVertical="20dp">
-
-                <ImageView
-                    android:id="@+id/btn_Parques"
-                    android:layout_width="156dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    tools:src="@drawable/park"></ImageView>
+                    android:layout_marginVertical="20dp"
+                    android:orientation="horizontal">
 
-                <Spinner
-                    android:layout_width="203dp"
-                    android:layout_height="match_parent"
-                    android:text="Parques"
-                    android:textSize="30dp"
-                    android:textStyle="bold"></Spinner>
+                    <ImageView
+                        android:id="@+id/btn_palace"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/borda2"
+                        android:src="@drawable/palace"
+                        tools:src="@drawable/palace"></ImageView>
 
-            </LinearLayout>
+                    <Spinner
+                        android:layout_width="203dp"
+                        android:layout_height="match_parent"
+                        android:entries="@array/spinnerPalacios"
+                        android:paddingLeft="20dp"
+                        android:text="Palacios"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginVertical="20dp">
+                    </Spinner>
 
-                <ImageView
-                    android:id="@+id/btn_Museus"
-                    android:layout_width="156dp"
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    tools:src="@drawable/image0"></ImageView>
+                    android:layout_marginVertical="20dp"
+                    android:orientation="horizontal">
 
-                <Spinner
-                    android:layout_width="204dp"
-                    android:layout_height="match_parent"
-                    android:text="Museus"
-                    android:textSize="30dp"
-                    android:textStyle="bold"></Spinner>
+                    <ImageView
+                        android:id="@+id/btn_teatros"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/borda2"
+                        android:src="@drawable/teatro"
+                        tools:src="@drawable/teatro"></ImageView>
+
+                    <Spinner
+                        android:layout_width="203dp"
+                        android:layout_height="match_parent"
+                        android:entries="@array/spinnerTeatros"
+                        android:paddingLeft="20dp"
+                        android:text="Palacios"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btn_Parques"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/borda2"
+                        android:src="@drawable/park"
+                        tools:src="@drawable/park"></ImageView>
+
+                    <Spinner
+                        android:layout_width="203dp"
+                        android:layout_height="match_parent"
+                        android:text="Palacios"
+                        android:paddingLeft="20dp"
+                        android:textSize="20sp"
+                        android:entries="@array/spinnerParques"
+                        android:textStyle="bold">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_Museus"
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/borda2"
+                        android:src="@drawable/image0"
+                        tools:src="@drawable/image0"></ImageButton>
+
+                    <Spinner
+                        android:layout_width="203dp"
+                        android:layout_height="match_parent"
+                        android:entries="@array/spinnerMuseus"
+                        android:paddingLeft="20dp"
+                        android:text="Palacios"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </Spinner>
+
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-    </FrameLayout>
+        </FrameLayout>
     </ScrollView>
 </LinearLayout>

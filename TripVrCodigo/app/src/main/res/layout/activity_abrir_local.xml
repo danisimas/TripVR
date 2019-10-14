@@ -23,10 +23,10 @@
             android:src="@drawable/logo" />
 
         <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:src="@drawable/voltar"/>
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/voltar" />
 
 
     </FrameLayout>
