@@ -13,7 +13,7 @@ public class FirebaseHelper {
 
     public static DatabaseReference getFirebase(){
         if(db==null){
-            db = FirebaseDatabase.getInstance().getReference();
+            db = FirebaseDatabase.getInstance().getReference("Locais");
         }
         return db;
     }
