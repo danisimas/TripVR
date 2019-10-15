@@ -11,4 +11,10 @@
         android:icon="@drawable/heart"
         android:title="Favoritos" />
 
+
+    <item
+        android:id="@+id/sobre"
+        android:icon="@drawable/oculos_2"
+        android:title="Sobre" />
+
 </menu>

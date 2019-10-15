@@ -14,19 +14,22 @@ import com.exemplo.tripvr.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FavoritosFragment extends Fragment {
+public class SobreFragment extends Fragment {
 
 
-    public FavoritosFragment() {
-        // Required empty public constructor
+
+    public SobreFragment() {
+
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_favoritos,container,false);
-        return view;
+
+        return inflater.inflate(R.layout.fragment_sobre, container, false);
+
+
     }
 
 }

@@ -1,10 +1,12 @@
-package com.exemplo.tripvr;
+package com.exemplo.tripvr.activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.exemplo.tripvr.R;
 import com.exemplo.tripvr.fragments.FavoritosFragment;
 import com.exemplo.tripvr.fragments.PrincipalFragment;
+import com.exemplo.tripvr.fragments.SobreFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
@@ -43,6 +45,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     break;
                 case R.id.favoritar:
                     selectedFragment = new FavoritosFragment();
+                    break;
+                case R.id.sobre:
+                    selectedFragment = new SobreFragment();
+                    break;
             }
 
             return loadFragment(selectedFragment);

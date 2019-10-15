@@ -10,29 +10,25 @@
 
     <string-array name="spinnerPalacios">
         <item>Palácios</item>
-        <item>Local 1</item>
-        <item>Local 2</item>
-        <item>Local 3</item>
+        <item>Palácio do Rio Negro</item>
+        <item>Palácio do Rio Solimões</item>
+        <item></item>
     </string-array>
 
     <string-array name="spinnerTeatros">
         <item>Teatros</item>
-        <item>Local 1</item>
-        <item>Local 2</item>
-        <item>Local 3</item>
+        <item>Teatro Amazonas</item>
     </string-array>
 
     <string-array name="spinnerParques">
         <item>Parques</item>
-        <item>Local 1</item>
-        <item>Local 2</item>
-        <item>Local 3</item>
+        <item>Parque Mindu</item>
     </string-array>
 
     <string-array name="spinnerMuseus">
         <item>Museus</item>
-        <item>Local 1</item>
-        <item>Local 2</item>
-        <item>Local 3</item>
+        <item>Museu da Amazônia</item>
     </string-array>
+
+    <string name="text_sobre">A proposta do Trip VR é unir os óculos de Realidade Virtual de baixo custo Google CardBoard Glasses com uma aplicação móvel contendo imagens e vídeos em 360°, permitindo aos usuários observar cenários que poderão ser utilizados pelos professores para incrementar o processo de ensino-aprendizagem.</string>
 </resources>
