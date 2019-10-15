@@ -2,15 +2,61 @@ package com.exemplo.tripvr.model;
 
 public class Local {
 
-    String nome,endereco,horario,id,Categoria;
+    String nome,endereco,horario,id,Categoria,sobre,foto1,foto2,video,foto;
 
-    public Local(String nome, String endereco, String horario, String id, String categoria) {
+    public String getSobre() {
+        return sobre;
+    }
+
+    public void setSobre(String sobre) {
+        this.sobre = sobre;
+    }
+
+    public String getFoto1() {
+        return foto1;
+    }
+
+    public void setFoto1(String foto1) {
+        this.foto1 = foto1;
+    }
+
+    public String getFoto2() {
+        return foto2;
+    }
+
+    public void setFoto2(String foto2) {
+        this.foto2 = foto2;
+    }
+
+    public String getVideo() {
+        return video;
+    }
+
+    public void setVideo(String video) {
+        this.video = video;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+
+    public Local(String nome, String endereco, String horario, String id, String categoria, String sobre, String foto1, String foto2, String video, String foto) {
         this.nome = nome;
         this.endereco = endereco;
         this.horario = horario;
         this.id = id;
         Categoria = categoria;
+        this.sobre = sobre;
+        this.foto1 = foto1;
+        this.foto2 = foto2;
+        this.video = video;
+        this.foto = foto;
     }
+
     public Local(){}
 
     public String getNome() {
