@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -13,56 +13,32 @@
         android:src="@drawable/logo" />
 
 
-    <FrameLayout
+    <SearchView
+        android:id="@+id/buscaLocal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/borda2"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btn_categorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/fragment_container">
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/btn_color"
+        android:gravity="center"
+        android:text="Categorias"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
 
-        <ImageView
-            android:id="@+id/blocoBusca"
-            android:layout_width="387dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:background="@drawable/borda2"/>
-
-        <SearchView
-            android:id="@+id/buscaLocal"
-            android:layout_width="388dp"
-            android:layout_height="54dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="16dp"
-            android:padding="16dp">
-
-        </SearchView>
-
-    </FrameLayout>
-
-
-
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/btn_categorias"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:textAllCaps="false"
-            android:background="@drawable/btn_color"
-            android:gravity="center"
-            android:text="Categorias"
-            android:textSize="20dp">
-
-        </Button>
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"></ScrollView>
-    </FrameLayout>
-</LinearLayout>
+
+</RelativeLayout>

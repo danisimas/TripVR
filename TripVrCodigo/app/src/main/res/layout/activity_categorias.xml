@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -30,29 +30,15 @@
     </FrameLayout>
 
 
-    <FrameLayout
+    <SearchView
+        android:id="@+id/buscaLocal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/blocoBusca"
-            android:layout_width="387dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:background="@drawable/borda2" />
-
-        <SearchView
-            android:id="@+id/buscaLocal"
-            android:layout_width="388dp"
-            android:layout_height="54dp"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:padding="16dp">
-
-        </SearchView>
-
-    </FrameLayout>
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/borda2"
+        android:padding="16dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -64,10 +50,9 @@
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp"
-                android:gravity="center"
+                android:layout_marginTop="220dp"
                 android:orientation="vertical"
                 android:padding="20dp">
 
@@ -84,14 +69,14 @@
                         android:layout_marginLeft="0dp"
                         android:background="@drawable/borda2"
                         android:src="@drawable/palace"
-                        tools:src="@drawable/palace"/>
+                        tools:src="@drawable/palace" />
 
                     <Spinner
+                        android:id="@+id/spinnerPalacios"
                         android:layout_width="203dp"
                         android:layout_height="match_parent"
                         android:entries="@array/spinnerPalacios"
                         android:paddingLeft="20dp"
-                        android:id="@+id/spinnerPalacios"
                         android:textSize="20sp"
                         android:textStyle="bold">
 
@@ -112,14 +97,14 @@
                         android:layout_marginLeft="0dp"
                         android:background="@drawable/borda2"
                         android:src="@drawable/teatro"
-                        tools:src="@drawable/teatro"></ImageView>
+                        tools:src="@drawable/teatro" />
 
                     <Spinner
+                        android:id="@+id/spinnerTeatros"
                         android:layout_width="203dp"
                         android:layout_height="match_parent"
                         android:entries="@array/spinnerTeatros"
                         android:paddingLeft="20dp"
-                        android:id="@+id/spinnerTeatros"
                         android:textSize="20sp"
                         android:textStyle="bold">
 
@@ -143,13 +128,13 @@
                         tools:src="@drawable/park"></ImageView>
 
                     <Spinner
+                        android:id="@+id/spinnerParques"
                         android:layout_width="203dp"
                         android:layout_height="match_parent"
-                        android:text="Palacios"
-                        android:paddingLeft="20dp"
-                        android:textSize="20sp"
                         android:entries="@array/spinnerParques"
-                        android:id="@+id/spinnerParques"
+                        android:paddingLeft="20dp"
+                        android:text="Palacios"
+                        android:textSize="20sp"
                         android:textStyle="bold">
 
                     </Spinner>
@@ -172,11 +157,11 @@
                         tools:src="@drawable/image0"></ImageButton>
 
                     <Spinner
+                        android:id="@+id/spinnerMuseus"
                         android:layout_width="203dp"
                         android:layout_height="match_parent"
                         android:entries="@array/spinnerMuseus"
                         android:paddingLeft="20dp"
-                        android:id="@+id/spinnerMuseus"
                         android:textSize="20sp"
                         android:textStyle="bold">
 
@@ -186,4 +171,4 @@
             </LinearLayout>
         </FrameLayout>
     </ScrollView>
-</LinearLayout>
+</RelativeLayout>

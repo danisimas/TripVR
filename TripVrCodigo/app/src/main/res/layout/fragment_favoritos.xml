@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+
 
     <ImageView
         android:id="@+id/imageLogo"
@@ -15,35 +17,22 @@
         android:src="@drawable/logo" />
 
 
-    <FrameLayout
+    <SearchView
+        android:id="@+id/buscaLocal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/borda2"
+        android:padding="16dp" />
 
-        <ImageView
-            android:id="@+id/blocoBusca"
-            android:layout_width="387dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:background="@drawable/borda2"/>
-
-        <SearchView
-            android:id="@+id/buscaLocal"
-            android:layout_width="388dp"
-            android:layout_height="54dp"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:padding="16dp">
-
-        </SearchView>
-
-
-    </FrameLayout>
 
     <ListView
         android:id="@+id/listar_favoritos"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="558dp"
+        android:layout_marginTop="220dp"/>
 
 
-</LinearLayout>
+</RelativeLayout>
