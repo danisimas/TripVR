@@ -112,10 +112,12 @@ public class CategoriasActivity extends AppCompatActivity {
             }
         });
 
+
+
         btnvoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onBackPressed();
+               Intent 
             }
         });
 
@@ -127,8 +129,7 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerPalacios = findViewById(R.id.spinnerPalacios);
         spinnerParques = findViewById(R.id.spinnerParques);
         spinnerTeatros = findViewById(R.id.spinnerTeatros);
-        btnvoltar = findViewById(R.id.btn_voltar);
-
+        btnvoltar = findViewById(R.id.btn_voltar_principal);
     }
 
 }
