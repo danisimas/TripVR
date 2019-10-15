@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.exemplo.tripvr.R;
+import com.exemplo.tripvr.helper.FirebaseHelper;
 import com.google.firebase.database.DatabaseReference;
 
 public class CategoriasActivity extends AppCompatActivity {
@@ -31,6 +32,8 @@ public class CategoriasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
 
+        db = FirebaseHelper.getFirebase();
+
 
         setContentView(R.layout.activity_categorias);
 
@@ -42,9 +45,6 @@ public class CategoriasActivity extends AppCompatActivity {
                 if(currentItem==position){
                     return;
                 }else{
-
-
-
                     Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
                     startActivity(intent);
                 }
