@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,26 +18,38 @@
             android:layout_margin="16dp"
             android:src="@drawable/logo" />
 
-
-        <me.biubiubiu.justifytext.library.JustifyTextView
-            android:layout_width="327dp"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="45dp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="195dp"
-            android:layout_marginEnd="38dp"
-            android:layout_marginRight="38dp"
-            android:padding="2dp"
+            android:text="O que é?"
+            android:layout_marginTop="140dp"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/corfundo"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_marginTop="190dp"
+            android:gravity="center_horizontal"
             android:text="@string/text_sobre"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:textColor="@android:color/black"
             android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:gravity="center_horizontal"
+            android:text="Desenvolvedores"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>
