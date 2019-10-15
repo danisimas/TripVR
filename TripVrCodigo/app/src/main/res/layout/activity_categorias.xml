@@ -125,7 +125,7 @@
                         android:layout_marginLeft="0dp"
                         android:background="@drawable/borda2"
                         android:src="@drawable/park"
-                        tools:src="@drawable/park"></ImageView>
+                        tools:src="@drawable/park"/>
 
                     <Spinner
                         android:id="@+id/spinnerParques"
@@ -154,7 +154,7 @@
                         android:layout_marginLeft="0dp"
                         android:background="@drawable/borda2"
                         android:src="@drawable/image0"
-                        tools:src="@drawable/image0"></ImageButton>
+                        tools:src="@drawable/image0"/>
 
                     <Spinner
                         android:id="@+id/spinnerMuseus"

@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.widget.RelativeLayout;
 
 import com.exemplo.tripvr.R;
 
@@ -15,6 +17,8 @@ import com.exemplo.tripvr.R;
  * A simple {@link Fragment} subclass.
  */
 public class SobreFragment extends Fragment {
+
+    WebView mWebView;
 
 
 
@@ -28,6 +32,8 @@ public class SobreFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         return inflater.inflate(R.layout.fragment_sobre, container, false);
+
+
 
 
     }

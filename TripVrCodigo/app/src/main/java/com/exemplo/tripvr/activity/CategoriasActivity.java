@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.exemplo.tripvr.R;
+import com.exemplo.tripvr.fragments.PrincipalFragment;
 import com.google.firebase.database.DatabaseReference;
 
 public class CategoriasActivity extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class CategoriasActivity extends AppCompatActivity {
     private ImageButton btnvoltar;
 
     private DatabaseReference db;
-    int currentItem =0;
+    int currentItem = 0;
 
 
     @Override
@@ -39,10 +40,9 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerPalacios.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(currentItem==position){
+                if (currentItem == position) {
                     return;
-                }else{
-
+                } else {
 
 
                     Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
@@ -59,9 +59,9 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerMuseus.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(currentItem==position){
+                if (currentItem == position) {
                     return;
-                }else{
+                } else {
                     Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
                     startActivity(intent);
                 }
@@ -75,10 +75,9 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerTeatros.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(currentItem==position){
+                if (currentItem == position) {
                     return;
-                }else{
-
+                } else {
 
 
                     Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
@@ -95,10 +94,9 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerParques.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(currentItem==position){
+                if (currentItem == position) {
                     return;
-                }else{
-
+                } else {
 
 
                     Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
@@ -113,18 +111,17 @@ public class CategoriasActivity extends AppCompatActivity {
         });
 
 
-
         btnvoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent 
+                onBackPressed();
             }
         });
 
 
     }
 
-    private void inicializarComponentes(){
+    private void inicializarComponentes() {
         spinnerMuseus = findViewById(R.id.spinnerMuseus);
         spinnerPalacios = findViewById(R.id.spinnerPalacios);
         spinnerParques = findViewById(R.id.spinnerParques);
