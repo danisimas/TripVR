@@ -12,8 +12,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.exemplo.tripvr.R;
-import com.exemplo.tripvr.helper.FirebaseHelper;
+
+
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class CategoriasActivity extends AppCompatActivity {
 
@@ -22,8 +24,6 @@ public class CategoriasActivity extends AppCompatActivity {
     private Spinner spinnerParques;
     private Spinner spinnerMuseus;
     private ImageButton btnvoltar;
-
-    private DatabaseReference db;
     int currentItem = 0;
 
 
@@ -31,9 +31,6 @@ public class CategoriasActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-
-        db = FirebaseHelper.getFirebase();
-
 
         setContentView(R.layout.activity_categorias);
 
@@ -45,6 +42,7 @@ public class CategoriasActivity extends AppCompatActivity {
                 if (currentItem == position) {
                     return;
                 }else{
+
                     Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
                     startActivity(intent);
                 }
@@ -127,6 +125,11 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerParques = findViewById(R.id.spinnerParques);
         spinnerTeatros = findViewById(R.id.spinnerTeatros);
         btnvoltar = findViewById(R.id.btn_voltar_principal);
+    }
+
+
+    private void pesquisarLocalFirebase(){
+
     }
 
 }
