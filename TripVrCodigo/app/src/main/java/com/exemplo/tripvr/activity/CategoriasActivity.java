@@ -34,7 +34,7 @@ public class CategoriasActivity extends AppCompatActivity {
         setContentView(R.layout.activity_categorias);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
-        db = firebaseDatabase.getReference().child("locais");
+        db = firebaseDatabase.getReference("locais");
 
         inicializarComponentes();
 
