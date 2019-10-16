@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.exemplo.tripvr.R;
+
 import com.exemplo.tripvr.fragments.FavoritosFragment;
 import com.exemplo.tripvr.fragments.PrincipalFragment;
 import com.exemplo.tripvr.fragments.SobreFragment;

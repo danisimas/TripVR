@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.ImageButton;
 import com.exemplo.tripvr.R;
 
+import com.exemplo.tripvr.activity.CategoriasActivity;
+
+
 public class AbrirLocalActivity extends AppCompatActivity {
 
     @Override
