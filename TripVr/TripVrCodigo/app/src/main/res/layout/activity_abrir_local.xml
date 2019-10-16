@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context=".AbrirLocal">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/btn_voltar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/voltar"/>
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="180dp"
+            android:background="@color/corfundo"/>
+
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/download" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/heart2" />
+
+        <ImageView
+            android:id="@+id/bloco1"
+            android:layout_width="360dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/borda2"/>
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="320dp"
+            android:background="@drawable/oculosrv" />
+
+
+        <ImageView
+            android:id="@+id/bloco2"
+            android:layout_width="360dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/borda2"/>
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="390dp"
+            android:background="@drawable/oculosrv" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

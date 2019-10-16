@@ -37,9 +37,8 @@ public class SobreFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_sobre, container, false);
+        return inflater.inflate(R.layout.fragment_sobre, container, false);
 
-        return v;
     }
 
 }
