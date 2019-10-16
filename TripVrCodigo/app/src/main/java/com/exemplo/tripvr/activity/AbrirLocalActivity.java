@@ -9,7 +9,6 @@ import android.widget.ImageButton;
 
 import com.exemplo.tripvr.R;
 import com.exemplo.tripvr.activity.CategoriasActivity;
-import com.exemplo.tripvr.model.Categorias;
 
 public class AbrirLocalActivity extends AppCompatActivity {
 

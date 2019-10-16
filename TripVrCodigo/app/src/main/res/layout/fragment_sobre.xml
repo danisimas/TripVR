@@ -29,27 +29,45 @@
             android:textColor="@color/corfundo"/>
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="113dp"
+        <!--<TextView
+            android:id="@+id/txt_sobre"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="190dp"
-            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
             android:text="@string/text_sobre"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:textColor="@android:color/black"
-            android:textSize="14sp" />
+            android:textSize="14sp" />-->
+
+        <com.codesgood.views.JustifiedTextView
+
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/text_sobre"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="320dp"
+            android:layout_marginTop="360dp"
             android:gravity="center_horizontal"
-            android:text="Desenvolvedores"
+            android:text="Desenvolvedor"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:text="Danile Simas"
+            android:textSize="14sp"
+            android:gravity = "center_horizontal"
+            android:textColor="@android:color/black"/>
     </RelativeLayout>
 
 </RelativeLayout>
