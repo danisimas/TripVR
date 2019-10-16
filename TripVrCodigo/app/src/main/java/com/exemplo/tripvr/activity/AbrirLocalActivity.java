@@ -8,10 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.exemplo.tripvr.R;
-<<<<<<< HEAD
-=======
-import com.exemplo.tripvr.activity.CategoriasActivity;
->>>>>>> fcf60b01557c615d1613960948a368f2c7f61bb6
+
 
 public class AbrirLocalActivity extends AppCompatActivity {
 
@@ -26,7 +23,7 @@ public class AbrirLocalActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                onBackPressed();
+               finish();
             }
         });
 

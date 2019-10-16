@@ -12,8 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.exemplo.tripvr.R;
-
-
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -24,6 +22,8 @@ public class CategoriasActivity extends AppCompatActivity {
     private Spinner spinnerParques;
     private Spinner spinnerMuseus;
     private ImageButton btnvoltar;
+    private DatabaseReference db;
+    private FirebaseDatabase firebaseDatabase;
     int currentItem = 0;
 
 
@@ -31,8 +31,10 @@ public class CategoriasActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-
         setContentView(R.layout.activity_categorias);
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        db = firebaseDatabase.getReference().child("locais");
 
         inicializarComponentes();
 
