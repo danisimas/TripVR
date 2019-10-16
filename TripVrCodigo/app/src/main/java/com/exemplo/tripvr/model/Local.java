@@ -2,7 +2,15 @@ package com.exemplo.tripvr.model;
 
 public class Local {
 
-    String nome,endereco,horario,id,Categoria,sobre,foto1,foto2,video,foto;
+    String nome,endereco,horario,id,Categoria,sobre,foto1,foto2,video,foto,nomePesquisar;
+
+    public String getNomePesquisar() {
+        return nomePesquisar.toUpperCase();
+    }
+
+    public void setNomePesquisar(String nomePesquisar) {
+        this.nomePesquisar = nomePesquisar;
+    }
 
     public String getSobre() {
         return sobre;

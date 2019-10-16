@@ -37,60 +37,6 @@ public class CategoriasActivity extends AppCompatActivity {
         db = firebaseDatabase.getReference("locais");
 
         inicializarComponentes();
-
-        spinnerPalacios.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-        spinnerMuseus.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (currentItem == position) {
-                    return;
-                } else {
-                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
-                    startActivity(intent);
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        spinnerTeatros.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-        spinnerParques.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-
         btnvoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
