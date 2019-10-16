@@ -32,7 +32,7 @@ public class CategoriasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
 
-        db = FirebaseHelper.getFirebase();
+        //db = FirebaseHelper.getFirebase();
 
 
         setContentView(R.layout.activity_categorias);
