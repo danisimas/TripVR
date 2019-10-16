@@ -41,13 +41,7 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerPalacios.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (currentItem == position) {
-                    return;
-                }else{
 
-                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
-                    startActivity(intent);
-                }
             }
 
             @Override
@@ -75,14 +69,7 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerTeatros.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (currentItem == position) {
-                    return;
-                } else {
 
-
-                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
-                    startActivity(intent);
-                }
             }
 
             @Override
@@ -94,14 +81,7 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerParques.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (currentItem == position) {
-                    return;
-                } else {
 
-
-                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
-                    startActivity(intent);
-                }
             }
 
             @Override

@@ -38,6 +38,13 @@ public class PrincipalFragment extends Fragment {
     }
 
 
+
+
+
+
+
+
+
     private void  inicializarComponentes(View v){
 
 
