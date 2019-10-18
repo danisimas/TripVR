@@ -19,6 +19,9 @@
         </activity>
         <activity android:name=".activity.AbrirLocalActivity" />
         <activity android:name=".activity.CategoriasActivity" />
+        <activity android:name=".activity.AbriLocalPalaciosActivity" />
+        <activity android:name=".activity.AbriLocalParquesActivity" />
+        <activity android:name=".activity.AbriLocalMuseusActivity" />
     </application>
 
 </manifest>
