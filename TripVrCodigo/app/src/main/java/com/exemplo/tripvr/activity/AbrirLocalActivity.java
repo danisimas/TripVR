@@ -16,7 +16,9 @@ public class AbrirLocalActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         getSupportActionBar().hide();
+
         setContentView(R.layout.activity_abrir_local);
         ImageButton btn_voltar = findViewById(R.id.btn_voltar_categoria);
         btn_voltar.setOnClickListener(new View.OnClickListener() {

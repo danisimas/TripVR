@@ -51,45 +51,38 @@ public class CategoriasActivity extends AppCompatActivity {
 
             }
         });
-        /*
-        spinnerPalacios.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spinnerPalacios.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(currentItem!=0){
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                if(currentItem==position){
                     return;
-                }else{
-
+                }else {
                     Intent intent = new Intent(CategoriasActivity.this,AbriLocalPalaciosActivity.class);
-
                     startActivity(intent);
                 }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
         });
-        spinnerTeatros.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spinnerParques.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(currentItem==0){
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
+                if(currentItem==position){
                     return;
-                }else{
-
-                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
-
+                }else {
+                    Intent intent = new Intent(CategoriasActivity.this,AbriLocalParquesActivity.class);
                     startActivity(intent);
                 }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
         });
-        spinnerParques.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(currentItem!=0){
-                    return;
-                }else{
-
-                    Intent intent = new Intent(CategoriasActivity.this, AbriLocalParquesActivity.class);
-                    startActivity(intent);
-                }
-            }
-        });*/
 
         btnvoltar.setOnClickListener(new View.OnClickListener() {
             @Override

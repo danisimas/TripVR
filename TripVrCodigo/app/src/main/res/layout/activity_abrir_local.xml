@@ -7,16 +7,16 @@
     android:orientation="vertical"
     tools:context=".activity.AbrirLocalActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
     <ImageButton
         android:id="@+id/btn_voltar_categoria"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_margin="20dp"
         android:background="@drawable/voltar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <FrameLayout
         android:layout_width="match_parent"
