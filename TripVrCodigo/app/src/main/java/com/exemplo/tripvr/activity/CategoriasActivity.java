@@ -33,28 +33,29 @@ public class CategoriasActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_categorias);
 
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        db = firebaseDatabase.getReference("locais");
         inicializarComponentes();
 
-        spinnerMuseus.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spinnerMuseus.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(currentItem==0){
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if(currentItem==position){
                     return;
-                }else{
-
-                    Intent intent = new Intent(CategoriasActivity.this, AbriLocalMuseusActivity.class);
-
-                startActivity(intent);
+                }else {
+                    Intent intent = new Intent(CategoriasActivity.this,AbriLocalMuseusActivity.class);
+                    startActivity(intent);
+                }
             }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
         });
-
+        /*
         spinnerPalacios.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(currentItem==0){
+                if(currentItem!=0){
                     return;
                 }else{
 
@@ -80,7 +81,7 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerParques.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(currentItem==0){
+                if(currentItem!=0){
                     return;
                 }else{
 
@@ -88,7 +89,7 @@ public class CategoriasActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             }
-        });
+        });*/
 
         btnvoltar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,11 +105,6 @@ public class CategoriasActivity extends AppCompatActivity {
         spinnerParques = findViewById(R.id.spinnerParques);
         spinnerTeatros = findViewById(R.id.spinnerTeatros);
         btnvoltar = findViewById(R.id.btn_voltar_principal);
-    }
-
-
-    private void pesquisarLocalFirebase(){
-
     }
 
 }
