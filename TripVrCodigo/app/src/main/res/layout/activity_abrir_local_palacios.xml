@@ -7,31 +7,24 @@
     android:orientation="vertical"
     tools:context=".activity.AbrirLocalActivity">
 
+
+    <ImageButton
+        android:id="@+id/btn_voltar_categoria3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/voltar" />
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <ImageButton
-            android:id="@+id/btn_voltar_categoria"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/voltar" />
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/imageLogo"
-                android:layout_width="wrap_content"
-                android:layout_height="130dp"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:src="@drawable/logo" />
-
-
-        </FrameLayout>
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logosp" />
 
 
         <ScrollView
@@ -49,11 +42,17 @@
                 android:layout_marginRight="-3dp"
                 android:layout_marginBottom="0dp">
 
+
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="394dp"
                     android:layout_marginTop="340dp"
                     android:background="@color/corfundo" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="236dp"
+                    android:layout_marginTop="130dp"
+                    android:src="@drawable/rionegro" />
 
 
                 <ImageButton
