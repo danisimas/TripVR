@@ -6,8 +6,7 @@
     android:orientation="vertical"
     tools:context=".fragments.SobreFragment">
 
-
-    <RelativeLayout
+        <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -31,14 +30,16 @@
 
 
             <com.codesgood.views.JustifiedTextView
-
-                android:layout_width="349dp"
+            android:layout_width="349dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="190dp"
                 android:text="@string/text_sobre"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="match_parent"
@@ -56,7 +57,6 @@
                 android:layout_marginTop="400dp"
                 android:src="@drawable/foto" />
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,7 +65,6 @@
                 android:text="Daniele Simas"
                 android:textColor="@android:color/black"
                 android:textSize="14sp" />
-
+            </ScrollView>
     </RelativeLayout>
-
 </RelativeLayout>

@@ -58,6 +58,8 @@ public class CategoriasActivity extends AppCompatActivity {
 
     private void pesquisarLocalFirebase(){
 
+
+
     }
 
 }
