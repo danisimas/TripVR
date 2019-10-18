@@ -21,12 +21,13 @@ public class AbrirLocalActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_abrir_local);
         ImageButton btn_voltar = findViewById(R.id.btn_voltar_categoria);
-        btn_voltar.setOnClickListener(new View.OnClickListener() {
+        btn_voltar.setOnClickListener(
+                new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
 
-                finish();
+                onBackPressed();
             }
         });
 

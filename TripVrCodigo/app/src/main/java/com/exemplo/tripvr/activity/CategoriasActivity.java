@@ -51,6 +51,24 @@ public class CategoriasActivity extends AppCompatActivity {
 
             }
         });
+
+
+        spinnerTeatros.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if(currentItem==i){
+                    return ;
+                }else{
+                    Intent intent = new Intent(CategoriasActivity.this,AbrirLocalActivity.class);
+                    startActivity(intent);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
         spinnerPalacios.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
