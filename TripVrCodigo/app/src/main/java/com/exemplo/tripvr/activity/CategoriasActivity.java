@@ -43,8 +43,6 @@ public class CategoriasActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
-
     }
 
     private void inicializarComponentes() {
