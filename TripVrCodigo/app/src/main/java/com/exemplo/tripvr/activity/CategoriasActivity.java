@@ -44,7 +44,7 @@ public class CategoriasActivity extends AppCompatActivity {
                     return;
                 }else{
 
-                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalMuseusActivity.class);
+                    Intent intent = new Intent(CategoriasActivity.this, AbriLocalMuseusActivity.class);
 
                 startActivity(intent);
             }
@@ -58,7 +58,7 @@ public class CategoriasActivity extends AppCompatActivity {
                     return;
                 }else{
 
-                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalPalaciosActivity.class);
+                    Intent intent = new Intent(CategoriasActivity.this,AbriLocalPalaciosActivity.class);
 
                     startActivity(intent);
                 }
@@ -84,7 +84,7 @@ public class CategoriasActivity extends AppCompatActivity {
                     return;
                 }else{
 
-                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalParquesActivity.class);
+                    Intent intent = new Intent(CategoriasActivity.this, AbriLocalParquesActivity.class);
                     startActivity(intent);
                 }
             }
