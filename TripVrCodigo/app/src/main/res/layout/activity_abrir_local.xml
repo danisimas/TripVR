@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activity.AbrirLocalActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btn_voltar_categoria"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/voltar" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -18,13 +29,6 @@
             android:layout_gravity="center"
             android:layout_margin="16dp"
             android:src="@drawable/logo" />
-
-        <ImageButton
-            android:id="@+id/btn_voltar_categoria"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/voltar" />
 
 
     </FrameLayout>
@@ -104,4 +108,5 @@
                 android:background="@drawable/oculosrv" />
         </FrameLayout>
     </ScrollView>
-</RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
