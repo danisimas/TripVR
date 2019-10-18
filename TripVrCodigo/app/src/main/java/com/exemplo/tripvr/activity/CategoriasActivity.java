@@ -35,8 +35,61 @@ public class CategoriasActivity extends AppCompatActivity {
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         db = firebaseDatabase.getReference("locais");
-
         inicializarComponentes();
+
+        spinnerMuseus.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(currentItem==0){
+                    return;
+                }else{
+
+                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalMuseusActivity.class);
+
+                startActivity(intent);
+            }
+            }
+        });
+
+        spinnerPalacios.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(currentItem==0){
+                    return;
+                }else{
+
+                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalPalaciosActivity.class);
+
+                    startActivity(intent);
+                }
+            }
+        });
+        spinnerTeatros.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(currentItem==0){
+                    return;
+                }else{
+
+                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalActivity.class);
+
+                    startActivity(intent);
+                }
+            }
+        });
+        spinnerParques.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(currentItem==0){
+                    return;
+                }else{
+
+                    Intent intent = new Intent(CategoriasActivity.this, AbrirLocalParquesActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
         btnvoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,8 +108,6 @@ public class CategoriasActivity extends AppCompatActivity {
 
 
     private void pesquisarLocalFirebase(){
-
-
 
     }
 

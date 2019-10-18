@@ -1,6 +1,8 @@
 package com.exemplo.tripvr.model;
 
-public class Local {
+import java.io.Serializable;
+
+public class Local implements Serializable {
 
     String nome,endereco,horario,id,Categoria,sobre,foto1,foto2,video,nomePesquisar;
 

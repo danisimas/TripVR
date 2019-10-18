@@ -1,6 +1,8 @@
 package com.exemplo.tripvr.model;
 
-public class Categorias {
+import java.io.Serializable;
+
+public class Categorias implements Serializable {
 
     String nome, nomePesquisar;
 

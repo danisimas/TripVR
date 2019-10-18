@@ -148,7 +148,6 @@
                             android:textStyle="bold">
 
                         </Spinner>
-
                     </LinearLayout>
                 </LinearLayout>
             </FrameLayout>
